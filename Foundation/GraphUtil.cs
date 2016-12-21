@@ -5,6 +5,12 @@ using UnityEngine;
 
 namespace TX
 {
+    public interface IRect
+    {
+        float Area { get; }
+        Rect Bound { get; set; }
+    }
+
     public interface IDAGNode
     {
         object NodeValue { get; }
